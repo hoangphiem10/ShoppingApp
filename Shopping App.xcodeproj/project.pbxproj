@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D040CB5281F6D41002921E6 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D040CB4281F6D41002921E6 /* CartManager.swift */; };
+		0D040CB7281F705A002921E6 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D040CB6281F705A002921E6 /* ProductRow.swift */; };
 		0DA2128C281EDFCF00751488 /* Shopping_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2128B281EDFCF00751488 /* Shopping_AppApp.swift */; };
 		0DA2128E281EDFCF00751488 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2128D281EDFCF00751488 /* ContentView.swift */; };
 		0DA21290281EDFD200751488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA2128F281EDFD200751488 /* Assets.xcassets */; };
 		0DA21293281EDFD200751488 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA21292281EDFD200751488 /* Preview Assets.xcassets */; };
+		0DA2129B281EE26A00751488 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2129A281EE26A00751488 /* Product.swift */; };
+		0DA2129E281EE75E00751488 /* ProductCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2129D281EE75E00751488 /* ProductCards.swift */; };
+		0DA212A0281EF17F00751488 /* CardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2129F281EF17F00751488 /* CardButton.swift */; };
+		0DA212A3281EF63100751488 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA212A2281EF63100751488 /* CartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D040CB4281F6D41002921E6 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		0D040CB6281F705A002921E6 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		0DA21288281EDFCF00751488 /* Shopping App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA2128B281EDFCF00751488 /* Shopping_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_AppApp.swift; sourceTree = "<group>"; };
 		0DA2128D281EDFCF00751488 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0DA2128F281EDFD200751488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DA21292281EDFD200751488 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0DA2129A281EE26A00751488 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0DA2129D281EE75E00751488 /* ProductCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCards.swift; sourceTree = "<group>"; };
+		0DA2129F281EF17F00751488 /* CardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardButton.swift; sourceTree = "<group>"; };
+		0DA212A2281EF63100751488 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				0DA2128B281EDFCF00751488 /* Shopping_AppApp.swift */,
-				0DA2128D281EDFCF00751488 /* ContentView.swift */,
+				0DA212A1281EF61E00751488 /* Views */,
+				0DA21299281EE00E00751488 /* Models */,
+				0DA2129C281EE71600751488 /* Components */,
 				0DA2128F281EDFD200751488 /* Assets.xcassets */,
 				0DA21291281EDFD200751488 /* Preview Content */,
+				0D040CB4281F6D41002921E6 /* CartManager.swift */,
 			);
 			path = "Shopping App";
 			sourceTree = "<group>";
@@ -65,6 +80,33 @@
 				0DA21292281EDFD200751488 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0DA21299281EE00E00751488 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0DA2129A281EE26A00751488 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0DA2129C281EE71600751488 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0DA2129D281EE75E00751488 /* ProductCards.swift */,
+				0DA2129F281EF17F00751488 /* CardButton.swift */,
+				0D040CB6281F705A002921E6 /* ProductRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0DA212A1281EF61E00751488 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DA2128D281EDFCF00751488 /* ContentView.swift */,
+				0DA212A2281EF63100751488 /* CartView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA212A3281EF63100751488 /* CartView.swift in Sources */,
 				0DA2128E281EDFCF00751488 /* ContentView.swift in Sources */,
+				0D040CB5281F6D41002921E6 /* CartManager.swift in Sources */,
 				0DA2128C281EDFCF00751488 /* Shopping_AppApp.swift in Sources */,
+				0D040CB7281F705A002921E6 /* ProductRow.swift in Sources */,
+				0DA2129B281EE26A00751488 /* Product.swift in Sources */,
+				0DA2129E281EE75E00751488 /* ProductCards.swift in Sources */,
+				0DA212A0281EF17F00751488 /* CardButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shopping App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2428R7CV45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shopping App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2428R7CV45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

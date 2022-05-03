@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var cartManager = CartManager()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     var body: some View {
         NavigationView{
@@ -16,11 +17,17 @@ struct ContentView: View {
                     ForEach(productList, id: \.id){
                         product in
                         ProductCards(product: product)
+                            .environmentObject(cartManager)
                     }
                 }.padding()
                     .navigationTitle("T-shirt Shop")
                     .toolbar {
-                        CardButton(numberOfButtons: 1)
+                        NavigationLink {
+                            CartView()
+                                .environmentObject(cartManager)
+                        } label: {
+                            CardButton(numberOfButtons: cartManager.products.count)
+                        }
                     }
             }
          

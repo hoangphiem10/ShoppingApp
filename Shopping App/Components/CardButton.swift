@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct CardButton: View {
+    var numberOfButtons: Int
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .topTrailing){
+            Image(systemName: "cart")
+            
+            if numberOfButtons > 0 {
+                Text("\(numberOfButtons)")
+                    .font(.caption2)
+                    .bold()
+                    .foregroundColor(.white)
+                    .frame(width: 15, height: 15)
+                    .background(.red)
+                    .cornerRadius(50)
+            }
+                
+        }
     }
 }
 
 struct CardButton_Previews: PreviewProvider {
     static var previews: some View {
-        CardButton()
+        CardButton(numberOfButtons: 1)
     }
 }
